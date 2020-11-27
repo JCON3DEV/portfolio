@@ -3,6 +3,12 @@ body{
   background-color: pink;
 }
 
+.underlay{
+ background-image: url(‘resources/images/vancouverReflection.jpg’);
+ background-size: cover;
+ background-repeat: no-repeat;
+ z-index: -1;
+}
 /*bootstrap styles */
 
 /* Navbar styles */
