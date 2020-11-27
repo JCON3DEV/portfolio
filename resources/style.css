@@ -3,11 +3,33 @@ body{
   background-color: pink;
 }
 
-.underlay{
- background-image: url(‘resources/images/vancouverReflection.jpg’);
- background-size: cover;
- background-repeat: no-repeat;
- z-index: -1;
+.wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(125, 228, 228);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 1;
+  z-index: 0;
+  mix-blend-mode: color; /*difference; - another really cool effect*/
+}
+.wrapper > * {
+  position: relative;
+  z-index: 10;
+  color: azure;
+}
+.wrapper {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1545469044-68715f789051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100%;
+  /* padding: 43.75vh 0; */
+  width: 100%;
 }
 /*bootstrap styles */
 
