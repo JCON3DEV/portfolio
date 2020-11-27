@@ -47,6 +47,7 @@ body{
 }
 .site-sidebar-inner {
   padding: 45px, 40px;
+  color: black;
 }
 .avatar {
   max-width: 152px;
