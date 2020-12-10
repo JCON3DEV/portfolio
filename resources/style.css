@@ -36,6 +36,16 @@ body{
 /*bootstrap styles */
 
 /* Navbar styles */
+.site-main::before{
+  position: fixed;
+  top:0;
+  left:0;
+  display: block;
+  content:"";
+  /* background-image: ; */
+  background:url('resources/images/vancouverReflection.jpg') top center cover;
+  width:25%;
+}
 .site-sidebar {
   position: fixed;
   top: 0;
@@ -44,9 +54,16 @@ body{
   z-index: 1;
   background-color: chartreuse;
   opacity: 0.4;
+  width: 25%;
+  padding: 45px, 40px;
 }
 .site-sidebar-inner {
-  padding: 45px, 40px;
+  padding: 45px 40px;
+  height: 100%;
+  /* padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px; */
   color: black;
 }
 .avatar {
