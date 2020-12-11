@@ -95,6 +95,14 @@ body{
   text-align: left;
   padding-left: 35%;
 }
+
+.block-social {
+  text-align: left;
+}
+
+.button-icon {
+  font-size: 2rem;
+}
 /* footer styles */
 
 /* Extra small devices (portrait phones, less than 576px)*/
