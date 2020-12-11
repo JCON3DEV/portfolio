@@ -46,6 +46,20 @@ body{
   background:url('resources/images/vancouverReflection.jpg') top center cover;
   width:25%;
 }
+
+.site-main {
+  margin-left: 25%;
+}
+
+.site-main-inner, .page-title{  
+  padding: 40px 45px;
+  text-align: left;
+}
+/* .home-section {
+  position: relative;
+  
+} */
+
 .site-sidebar {
   position: fixed;
   top: 0;
