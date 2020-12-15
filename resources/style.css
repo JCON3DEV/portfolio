@@ -151,7 +151,9 @@ article {
 .page-title{
   color: red;
 }
+
 /* portfolio page styles */
+
 .portfolio-section {
   padding: 4rem 5rem;
   line-height: 1.5;
@@ -160,12 +162,31 @@ article {
   font-size: 20px;
 }
 
-.timeline_element-description {
+.portfolio-buttons a, .timeline a {
+  /* temporary adjust later */
+  color: aqua;
+}
+
+.timeline-element {
+  position: relative;
+}
+
+.timeline_element-content {
   border-top: 1px solid black;
-  padding: 30px 0;
+  padding: 2rem 0;
   margin-left: 160px;
 }
 
+.timeline-element-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  font-style: italic;
+  line-height: 2rem;
+  border-right: 1px solid rgb(5, 5, 5);
+}
 
 
 /* footer styles */
