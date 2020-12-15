@@ -114,13 +114,30 @@ article {
 }
 
 .main-contact {
+  text-align: left;
   width: 100%;
   padding: 4rem 5rem;
   color: black;
+  /* For troubleshooting purposes */
+  background-color: bisque;
 }
-.main-contact-wrapper {
+li p{
+  display: inline-block;
+}
+.spacer{
+  width: 180px;
+}
+.contact-details {
+  width: 50%;
+}
+.contact-details a {
+  /* colour can be changed */
+  color: rgb(46, 46, 189);
+}
+li .button-icon {
+  font-size: 1.5rem;
+}
 
-}
 .home-section {
   margin-top: 16rem;
   padding: 4rem 5rem;
@@ -150,7 +167,17 @@ article {
 }
 .page-title{
   color: red;
+  line-height: 2rem;
+  margin-bottom: 1rem;
 }
+
+.tab {
+  display: inline-block;
+  margin-left: 120px;
+}
+/* .contact-details{
+  
+} */
 
 /* portfolio page styles */
 
