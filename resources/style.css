@@ -166,7 +166,7 @@ article {
 
 .portfolio-buttons a, .timeline a {
   /* temporary adjust later */
-  color: aqua;
+  color: rgb(131, 144, 144);
 }
 
 .timeline {
@@ -181,7 +181,6 @@ article {
 }
 
 .timeline_element {
-  /* position: relative; */
   position: absolute;
   overflow: hidden;
 }
@@ -189,7 +188,8 @@ article {
 .timeline_element-content {
   border-top: 1px solid black;
   padding: 2rem 0;
-  margin-left: 160px;
+  margin-left: 180px;
+  margin-right: 2rem;
   overflow: hidden;
 }
 
@@ -201,6 +201,7 @@ article {
   /* should this be fixed or relative? eg 10rem */
   width: 160px;
   background-color: cadetblue;
+  padding: 2rem 1rem;
   text-align: right;
   font-style: italic;
   line-height: 2rem;
