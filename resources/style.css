@@ -67,7 +67,7 @@ article {
   margin-left: 25%;
 }
 
-.site-main-inner, .page-title{  
+.site-main-inner{  
   /* padding: 40px 45px;
   text-align: left;
   margin: 0;
@@ -148,7 +148,9 @@ article {
 .button-icon {
   font-size: 2rem;
 }
-
+.page-title{
+  color: red;
+}
 /* portfolio page styles */
 .portfolio-section {
   padding: 4rem 5rem;
