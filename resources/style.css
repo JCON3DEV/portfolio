@@ -68,12 +68,21 @@ article {
 }
 
 .site-main-inner, .page-title{  
-  padding: 40px 45px;
+  /* padding: 40px 45px;
   text-align: left;
-  /* playing */
-  /* padding: 10vw 45px; */
   margin: 0;
-  background-color: crimson;
+  background-color: crimson; */
+  /* position: absolute;
+  width: 100%; */
+  /* playing */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgb(231, 37, 221);
+  opacity: 0.5;
+  width: 75%;
 }
 /* .home-section {
   position: relative;
@@ -101,6 +110,16 @@ article {
   padding-right: 40px;
   padding-bottom: 40px; */
   color: black;
+}
+
+.main-contact {
+  width: 100%;
+  /* padding: 45em 40em; */
+  color: black;
+}
+.home-section {
+  margin-top: 16rem;
+  padding: 4rem 5rem;
 }
 .avatar {
   max-width: 152px;
