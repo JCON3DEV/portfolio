@@ -80,8 +80,8 @@ article {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background-color: rgb(231, 37, 221);
-  opacity: 0.5;
+  background-color: rgba(251, 251, 251, 0.897);
+  opacity: 1;
   width: 75%;
 }
 .landing-main-inner {
@@ -93,10 +93,6 @@ article {
   opacity: 0.5;
   width: 75%;
 }
-/* .home-section {
- background-color: rgb(113, 195, 93);
-  
-} */
 
 .site-sidebar {
   /* option to place background image here instead of wrapper */
@@ -114,17 +110,16 @@ article {
 .site-sidebar-inner {
   padding: 45px 40px;
   height: 100%;
-  /* padding-left: 40px;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px; */
   color: black;
 }
 
 .main-contact {
   width: 100%;
-  /* padding: 45em 40em; */
+  padding: 4rem 5rem;
   color: black;
+}
+.main-contact-wrapper {
+
 }
 .home-section {
   margin-top: 16rem;
@@ -153,6 +148,16 @@ article {
 .button-icon {
   font-size: 2rem;
 }
+
+/* portfolio page styles */
+.portfolio-section {
+  padding: 4rem 5rem;
+  line-height: 1.5;
+  color: black;
+  /* Amend below. Temporary sizing; */
+  font-size: 20px;
+}
+
 /* footer styles */
 
 /* Extra small devices (portrait phones, less than 576px)*/
