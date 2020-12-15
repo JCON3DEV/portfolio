@@ -160,6 +160,14 @@ article {
   font-size: 20px;
 }
 
+.timeline_element-description {
+  border-top: 1px solid black;
+  padding: 30px 0;
+  margin-left: 160px;
+}
+
+
+
 /* footer styles */
 
 /* Extra small devices (portrait phones, less than 576px)*/
