@@ -169,13 +169,20 @@ article {
   color: aqua;
 }
 
+.timeline {
+  margin-left: -80px;
+}
+
 .timeline>ul, .timeline>ul>li {
   margin: 0;
   padding: 0;
+  /* double check this; */
+  list-style: none;
 }
 
-.timeline-element {
-  position: relative;
+.timeline_element {
+  /* position: relative; */
+  position: absolute;
   overflow: hidden;
 }
 
@@ -188,12 +195,12 @@ article {
 
 .timeline_element-date {
   position: absolute;
-  /* should this be fixed or relative? eg 10rem */
-  width: 160px;
-  background-color: cadetblue;
   top: 0;
   left: 0;
   bottom: 0;
+  /* should this be fixed or relative? eg 10rem */
+  width: 160px;
+  background-color: cadetblue;
   text-align: right;
   font-style: italic;
   line-height: 2rem;
