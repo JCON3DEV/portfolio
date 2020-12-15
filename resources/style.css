@@ -155,6 +155,8 @@ article {
 /* portfolio page styles */
 
 .portfolio-section {
+  max-width: 1400px;
+  height: 100%;
   padding: 4rem 5rem;
   line-height: 1.5;
   color: black;
@@ -167,20 +169,30 @@ article {
   color: aqua;
 }
 
+.timeline>ul, .timeline>ul>li {
+  margin: 0;
+  padding: 0;
+}
+
 .timeline-element {
   position: relative;
+  overflow: hidden;
 }
 
 .timeline_element-content {
   border-top: 1px solid black;
   padding: 2rem 0;
   margin-left: 160px;
+  overflow: hidden;
 }
 
-.timeline-element-date {
+.timeline_element-date {
   position: absolute;
+  /* should this be fixed or relative? eg 10rem */
+  width: 160px;
+  background-color: cadetblue;
   top: 0;
-  right: 0;
+  left: 0;
   bottom: 0;
   text-align: right;
   font-style: italic;
