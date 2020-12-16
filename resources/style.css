@@ -44,12 +44,11 @@ a {
 
 .home-heading{
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-.home-subheading {
-  font-size: 2rem;
-  font-weight: 250;
+.home-subheading strong {
+  font-weight: bold;
 }
 
 article {
@@ -133,6 +132,11 @@ article {
 .site-sidebar-inner {
   padding: 45px 40px;
   height: 100%;
+}
+
+.site-sidebar-inner::after {
+  opacity: 1;
+  
 }
 
 /* contact page specific stylings: */
