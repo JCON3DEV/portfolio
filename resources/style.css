@@ -219,6 +219,7 @@ li .button-icon {
   /* below blocks out the background image dont want to keep. */
   /* same as .main-contact section */
   /* background-color: #f4f4f4; */
+  overflow: scroll;
 }
 
 .portfolio-buttons a, .timeline a {
