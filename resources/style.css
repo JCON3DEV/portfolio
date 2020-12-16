@@ -228,6 +228,7 @@ li .button-icon {
 
 .timeline {
   margin-left: -80px;
+  margin-top:1rem;
 }
 
 .timeline>ul, .timeline>ul>li {
@@ -238,7 +239,7 @@ li .button-icon {
 }
 
 .timeline_element {
-  position: absolute;
+  position: relative;
   overflow: hidden;
 }
 
@@ -257,7 +258,8 @@ li .button-icon {
   bottom: 0;
   /* should this be fixed or relative? eg 10rem */
   width: 160px;
-  background-color: cadetblue;
+  /* below was for positioning troubleshooting */
+  /* background-color: cadetblue; */
   padding: 2rem 1rem;
   text-align: right;
   font-style: italic;
