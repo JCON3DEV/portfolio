@@ -13,7 +13,7 @@ a {
 
 .wrapper::after {
   content: "";
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
   /* experimenting here */
@@ -23,8 +23,8 @@ a {
   position: absolute;
   top: 0%;
   left: 0%;
-  opacity: 1;
-  z-index: 0;
+  /* opacity: 1;
+  z-index: 0; */
   mix-blend-mode: color; /*difference; - another really cool effect*/
 }
 .wrapper > * {
@@ -42,6 +42,16 @@ a {
   height: 100vh;
 }
 
+.home-heading{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.home-subheading {
+  font-size: 2rem;
+  font-weight: 250;
+}
+
 article {
   height: 100vh;
   /* background-image: url('https://images.unsplash.com/photo-1604644799578-2ff290e38029?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); */
@@ -52,7 +62,6 @@ article {
 
 /* Navbar styles */
 .site-main::before{
-  /* option to make this height:100vh; to cover the background entirely */
   position: fixed;
   top:0;
   left:0;
@@ -81,7 +90,7 @@ article {
   right: 0;
   z-index: 1;
   background-color: rgba(251, 251, 251, 0.897);
-  opacity: 1;
+  /* opacity: 1; */
   width: 75%;
 }
 .landing-main-inner {
@@ -90,8 +99,22 @@ article {
   bottom: 0;
   right: 0;
   z-index: 1;
-  opacity: 0.5;
+  /* beleive below not needed; */
+  /* opacity: 0.5; */
   width: 75%;
+}
+
+.home-buttons {
+  margin-top: 3rem;
+}
+
+.home-section .home-buttons .button-outline {
+  /* margin top does not work. Needs fixing: */
+  /* margin-top: 6rem; */
+  padding: .5rem .4rem;
+  border: 1px solid white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .site-sidebar {
@@ -100,7 +123,7 @@ article {
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
   /* experimenting here */
   background-color: #00203FFF;
   opacity: 0.4;
@@ -110,8 +133,9 @@ article {
 .site-sidebar-inner {
   padding: 45px 40px;
   height: 100%;
-  color: black;
 }
+
+/* contact page specific stylings: */
 
 .main-contact {
   text-align: left;
@@ -156,6 +180,7 @@ li .button-icon {
 
 .home-section-inner {
   text-align: left;
+  text-shadow: 1px 1px 2px black;
 }
 
 .block-social {
@@ -175,9 +200,6 @@ li .button-icon {
   display: inline-block;
   margin-left: 120px;
 }
-/* .contact-details{
-  
-} */
 
 /* portfolio page styles */
 
