@@ -281,9 +281,9 @@ li .button-icon {
   max-width: 350px;
 }
 
-.portfolio-timeline .project-image img {
+.portfolio-timeline .project-image img, .portfolio-timeline .project-image video {
   width: 100%;
-  /* max-height: 500px; */
+  max-height: 500px;
 }
 
 /* footer styles */
