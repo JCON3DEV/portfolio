@@ -286,6 +286,10 @@ li .button-icon {
   max-height: 500px;
 }
 
+.page-title h2, .technologies-title {
+  margin-top:.5rem;
+}
+
 /* footer styles */
 
 /* Extra small devices (portrait phones, less than 576px)*/
