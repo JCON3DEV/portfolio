@@ -296,13 +296,47 @@ li .button-icon {
 /* No media query for `xs` since this is the default in Bootstrap*/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+  .site-sidebar {
+    /* display: none; */
+  }
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media only screen and (min-width: 768px) { ... }
-
-/* Large devices (desktops, 992px and up)*/
-@media only screen and (min-width: 992px) { ... }
+  
+/* Large devices (desktops, 992px and below)*/
+@media only screen and (max-width: 950px) { 
+  .site-sidebar {
+    display: block;
+    top: auto;
+    bottom: auto;
+    left:auto;
+    right:auto;
+    position: relative;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .site-main {
+    margin:0;
+  }
+  .site-main-inner{
+    position: relative;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    margin: 0 auto;
+  }
+  .main-contact {
+    padding: 0;
+  }
+  .contact-details{
+    width: 100%;
+  }
+  .spacer{
+    width: 120px;
+  }
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media only screen and (min-width: 1200px) { ... }
