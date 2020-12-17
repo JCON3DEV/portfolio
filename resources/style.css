@@ -192,7 +192,8 @@ li .button-icon {
   text-align: left;
 }
 
-.button-icon {
+/* poss name change for hamburger */
+.button-icon, .hamburger i {
   font-size: 2rem;
 }
 .page-title{
@@ -327,6 +328,22 @@ li .button-icon {
     padding: 2rem 1.5rem;
     margin: 0 auto;
   }
+  .main-navigation{
+    text-align: right;
+  }
+  .main-navigation-extended {
+    display: block;
+    border-top: 1px solid azure;
+    border-bottom: 1px solid azure;
+  }
+  .social-icons {    
+    float: left;
+  }
+  /* probable name change below */
+  .hamburger {
+    width: 50%;
+    float: right;
+  }
   .main-contact {
     padding: 0;
   }
@@ -339,4 +356,8 @@ li .button-icon {
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media only screen and (min-width: 1200px) { ... }
+@media only screen and (min-width: 951px) {
+  .main-navigation-extended {
+    display: none;
+  }
+}
