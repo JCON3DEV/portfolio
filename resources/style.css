@@ -340,7 +340,7 @@ li .button-icon {
   .site-main {
     margin:0;
   }
-  .site-main-inner{
+  .contact-site-main-inner{
     position: relative;
     /* max-width: 850px; */
     /* Testing Responsiveness; */
@@ -349,6 +349,13 @@ li .button-icon {
     margin: 0 auto;
     width: 100%;
   }
+
+  .portfolio-site-main-inner {
+    position: relative;
+    width: 100%;
+    background-color: rgba(251, 251, 251, 0.897);
+  }
+
   /* THis one; */
   .main-navigation {
     text-align: right;
