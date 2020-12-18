@@ -306,8 +306,15 @@ li .button-icon {
 /* Medium devices (tablets, 768px and up)*/
 @media only screen and (min-width: 768px) { ... }
   
-/* Large devices (desktops, 992px and below)*/
+/* Large devices (desktops, 949px and below)*/
 @media only screen and (max-width: 950px) { 
+  .site-sidebar::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+  }
   .site-sidebar {
     display: block;
     top: auto;
@@ -318,6 +325,8 @@ li .button-icon {
     width: auto;
     padding-top: 40px;
     padding-bottom: 10px;
+    /* testing */
+    opacity: 1;
   }
   .site-main {
     margin:0;
@@ -330,11 +339,15 @@ li .button-icon {
   }
   .main-navigation{
     text-align: right;
-  }
-  .main-navigation-extended {
     display: block;
-    border-top: 1px solid azure;
-    border-bottom: 1px solid azure;
+    border-top: 1px solid white;
+    /* border-bottom: 1px solid azure; */
+  }
+  .main-navigation-extended{
+    border: 1px solid white;
+  }
+  .nav-extend-bar {
+    border: 1px solid white;
   }
   .social-icons {    
     float: left;
@@ -343,6 +356,9 @@ li .button-icon {
   .hamburger {
     width: 50%;
     float: right;
+  }
+  .block-social {
+    display: none;
   }
   .main-contact {
     padding: 0;
@@ -353,11 +369,20 @@ li .button-icon {
   .spacer{
     width: 120px;
   }
+  /* experiement */
+  .wrapper::after {
+    display: none;
+  }
+  /* testing */
+  .wrapper {
+    background-color: azure;
+    background-image: none;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media only screen and (min-width: 951px) {
-  .main-navigation-extended {
+  .main-navigation .hamburger {
     display: none;
   }
 }
