@@ -377,6 +377,7 @@ li .button-icon {
   .wrapper {
     background-color: azure;
     background-image: none;
+    height:auto;
   }
 }
 
