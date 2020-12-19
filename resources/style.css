@@ -1,6 +1,7 @@
 /*universal styles*/
 body{
-  background-color: pink;
+  /* need general colour */
+  background-color: rgba(251, 251, 251, 0.897);
   font: 16px/1.6 Roboto,Helvetica,sans-serif;
   font-weight:300;
 }
@@ -147,7 +148,7 @@ article {
   padding: 4rem 5rem;
   color: black;
   /* same as .portfolio-section */
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 li p{
   display: inline-block;
@@ -251,7 +252,7 @@ li .button-icon {
   border-top: 1px solid black;
   padding: 2rem 0;
   margin-left: 180px;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
   overflow: hidden;
 }
 
@@ -335,7 +336,11 @@ li .button-icon {
     /* testing */
     /* padding-top: 40px;
     padding-bottom: 10px; */
-    opacity: 1;
+    opacity: 1;    
+  }
+  .site-sidebar-inner {
+    padding: 0 40px;
+    padding-top: 2rem; /*approx 30px*/
   }
   .site-main {
     margin:0;
@@ -356,6 +361,11 @@ li .button-icon {
     background-color: rgba(251, 251, 251, 0.897);
   }
 
+  .portfolio-timeline .project-text {
+    width: auto;
+    float: none;
+  }
+
   /* THis one; */
   .main-navigation {
     text-align: right;
@@ -367,7 +377,7 @@ li .button-icon {
     font-size: 14px;
     /* text-transform: uppercase; */
     line-height: 50px;
-    /* margin: 20px -40px; */
+    margin: 1.5rem -1rem;
   } 
 
   .main-navigation .nav-extend-bar .social-icons {    
@@ -443,6 +453,4 @@ li .button-icon {
   /* Troubleshootijng sml screeen responsiveness */
   /* overflow: scroll; */
 }
-
-
 }
