@@ -187,11 +187,13 @@ li .button-icon {
   padding-bottom: 1rem;
 }
 
-.main-navigation, .block-title {
-  padding-top: 2rem;
+.main-navigation, .block-title {  
   text-align: left;
   text-transform: uppercase;
   line-height: 2.5em;
+}
+.block-title {
+  padding-top: 2rem;
 }
 
 .home-section-inner {
@@ -343,6 +345,16 @@ li .button-icon {
   .landing-main-inner {
     width: 100%;
   }
+  .parent-home .main-navigation {
+    position: absolute;
+    margin: 0 0;
+    padding: 0.5rem 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* testing Change this colour; */
+    background-color: black;
+  }
   /* end of home specific styles */
 
   .site-sidebar::before {
@@ -392,6 +404,7 @@ li .button-icon {
 
   /* THis one; */
   .main-navigation {
+    padding-top: 1rem;
     text-align: right;
     display: block;
     /* border-top: 1px solid white; */
@@ -401,6 +414,8 @@ li .button-icon {
     font-size: 14px;
     /* text-transform: uppercase; */
     line-height: 50px;
+
+    /* THIS MARGIN CAUSES WHITESPACE if .site-sidebar-inner padding top is removed. */
     margin: 1.5rem -1rem;
   } 
 
