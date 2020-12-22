@@ -332,6 +332,19 @@ li .button-icon {
     position: relative;
   }
 
+  /* home page only styles; */
+  .h-card {
+    height: 100vh;
+  }
+
+  .parent-home .person {
+    display: none;
+  }
+  .landing-main-inner {
+    width: 100%;
+  }
+  /* end of home specific styles */
+
   .site-sidebar::before {
     position: absolute;
     top: 0;
