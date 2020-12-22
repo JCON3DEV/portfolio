@@ -117,7 +117,7 @@ article {
   text-transform: uppercase;
 }
 
-.site-sidebar >* {
+.site-sidebar > * {
   /* option to place background image here instead of wrapper */
   position: fixed;
   top: 0;
@@ -317,9 +317,19 @@ li .button-icon {
   
 /* Large devices (desktops, 949px and below)*/
 @media only screen and (max-width: 950px) { 
+  /* testing */
+  .wrapper {
+    display: hidden;
+    height: auto;
+  }
   .sml-screen-portfolio-section{
     padding: 1.5rem 1.5rem;
     margin: 0 auto;
+  }
+
+  /* testing */
+  .site-sidebar > * {
+    position: relative;
   }
 
   .site-sidebar::before {
@@ -327,7 +337,8 @@ li .button-icon {
     top: 0;
     left: 0;
     bottom: 0;
-
+    /* testing */
+    content: none;
   }
   .site-sidebar {
     display: block;
@@ -342,6 +353,8 @@ li .button-icon {
   .site-sidebar-inner {
     padding: 0 40px;
     padding-top: 2rem; /*approx 30px*/
+    /* testing */
+    width: 100%;
   }
   .site-main {
     margin:0;
@@ -394,7 +407,7 @@ li .button-icon {
   }
   .person, .contact-details{
     width: 100%;
-    display: none;
+    /* display: none; */
   }
   .spacer{
     width: 120px;
