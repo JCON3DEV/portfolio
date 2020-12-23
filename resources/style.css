@@ -320,11 +320,19 @@ li .button-icon {
 /* Large devices (desktops, 949px and below)*/
 @media only screen and (max-width: 950px) { 
   .dropdown-nav {
-    /* display: none; */
+    display: none;
   }
-  .dropdown-nav.active {
+  .dropdown-nav-active {
     display: block;
-    transition:  height 2s, transform 2s;
+    height: 0;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+  }
+  .main-navigation .dropdown-nav-active {
+    height: 180px;
+  }
+  .home-section {
+    position: relative;
   }
   /* testing */
   .wrapper {
