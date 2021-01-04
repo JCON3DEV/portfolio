@@ -26,6 +26,9 @@ a {
   background-color: rgba(145,13,13,.8);
 }
 
+.site-main {
+  margin-left: 25%;
+}
 .site-main::before {
     position: fixed;
     top: 0;
@@ -81,14 +84,17 @@ a {
   .parent-contact .site-main::before {
     display: none;
   }
+
+  .site-main {
+    margin-left: 0;
+  }
+
   .site-main::before {
     content: "";
     display: block;
     background-image: url('https://images.unsplash.com/photo-1604644799578-2ff290e38029?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') top center no-repeat;
     background-size: cover;
     color: black;
-    /* width: 60px;
-    height: 60px; */
   }
   .site-sidebar {
     top: auto;
