@@ -1,0 +1,504 @@
+/*universal styles*/
+body{
+  /* need general colour */
+  background-color: rgba(251, 251, 251, 0.897);
+  font: 16px/1.6 Roboto,Helvetica,sans-serif;
+  font-weight:300;
+}
+
+/* experimenting with colour */
+a {
+  text-decoration: none !important;
+  color: #FFFFFF;
+}
+
+.wrapper::before {
+  content: "";
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  /* experimenting here */
+  background-color: #ADEFD1FF;
+  /* below is orriginal choice */
+  /* background-color: rgb(125, 228, 228); */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* opacity: 1;
+  z-index: 0; */
+  mix-blend-mode: color; /*difference; - another really cool effect*/
+}
+.wrapper > * {
+  position: relative;
+  z-index: 1;
+  color: azure;
+}
+.wrapper {
+  /* option to move background image fropm here to .site-sidebar */
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1545469044-68715f789051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100vh;
+}
+
+.home-heading{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.home-subheading strong {
+  font-weight: bold;
+}
+
+article {
+  height: 100vh;
+  /* background-image: url('https://images.unsplash.com/photo-1604644799578-2ff290e38029?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); */
+  background-color: rgb(216, 248, 248);
+}
+
+/*bootstrap styles */
+
+/* Navbar styles */
+.site-main::before{
+  position: fixed;
+  top:0;
+  left:0;
+  display: block;
+  content:"";
+  /* background-image: ; */
+  background-image: url('https://images.unsplash.com/photo-1604644799578-2ff290e38029?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  /* background:url('resources/images/vancouverReflection.jpg') top center cover; */
+  width:25%;
+}
+
+.site-main {
+  margin-left: 25%;
+}
+
+.site-main-inner{  
+  /* padding: 40px 45px;
+  text-align: left;
+  margin: 0;
+  background-color: crimson; */
+  /* position: absolute;
+  width: 100%; */
+  /* playing */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(251, 251, 251, 0.897);
+  /* opacity: 1; */
+  width: 75%;
+}
+.landing-main-inner {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  /* beleive below not needed; */
+  /* opacity: 0.5; */
+  width: 75%;
+}
+
+.home-buttons {
+  margin-top: 6rem;
+}
+
+.home-section .home-buttons .button-outline {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: .4rem .4rem;
+  border: 1px solid white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.site-sidebar > * {
+  /* option to place background image here instead of wrapper */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 25%;
+}
+
+.site-sidebar::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width:25%;
+  opacity: 0.4;
+  background-color: #00203FFF;
+}
+
+.site-sidebar-inner {
+  padding: 45px 40px;
+  height: 100%;
+  z-index: 2;
+  opacity: 1;
+}
+
+/* .site-sidebar-inner::before {
+  opacity: 1;
+  background-color: black;
+} */
+
+/* contact page specific stylings: */
+
+.main-contact {
+  text-align: left;
+  width: 100%;
+  padding: 4rem 5rem;
+  color: black;
+  /* same as .portfolio-section */
+  /* background-color: #f4f4f4; */
+}
+li p{
+  display: inline-block;
+}
+.spacer{
+  width: 180px;
+}
+.contact-details {
+  margin-top:1.5rem;
+  width: 80%;
+}
+.contact-details a {
+  /* colour can be changed */
+  color: rgb(46, 46, 189);
+}
+li .button-icon {
+  font-size: 1.5rem;
+}
+
+.home-section {
+  margin-top: 7rem;
+  padding: 4rem 5rem;
+}
+.avatar {
+  max-width: 152px;
+  padding-bottom: 1rem;
+}
+
+.main-navigation, .block-title {  
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 2.5em;
+}
+.block-title {
+  padding-top: 2rem;
+}
+
+.home-section-inner {
+  text-align: left;
+  text-shadow: 1px 1px 2px black;
+}
+
+.block-social {
+  text-align: left;
+}
+
+/* poss name change for hamburger */
+.button-icon, .hamburger i {
+  font-size: 2rem;
+}
+.page-title{
+  color: red;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 120px;
+}
+
+/* portfolio page styles */
+
+/* .portfolio-section {
+  max-width: 1400px;
+  height: 100%;
+  padding: 4rem 5rem;
+  line-height: 1.5;
+  color: black; */
+  /* Amend below. Temporary sizing; */
+  /* font-size: 20px; */
+  /* below blocks out the background image dont want to keep. */
+  /* same as .main-contact section */
+  /* background-color: #f4f4f4; */
+
+  /* Troubleshootijng sml screeen responsiveness */
+  /* overflow: scroll; */
+/* } */
+
+.portfolio-buttons a, .timeline a {
+  /* temporary adjust later */
+  color: rgb(131, 144, 144);
+}
+
+.timeline {
+  margin-left: -80px;
+  margin-top:1rem;
+}
+
+.timeline>ul, .timeline>ul>li {
+  margin: 0;
+  padding: 0;
+  /* double check this; */
+  list-style: none;
+}
+
+.timeline_element {
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline_element-content {
+  border-top: 1px solid black;
+  padding: 2rem 0;
+  margin-left: 180px;
+  margin-right: 0.5rem;
+  overflow: hidden;
+}
+
+.timeline_element-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* should this be fixed or relative? eg 10rem */
+  width: 160px;
+  /* below was for positioning troubleshooting */
+  /* background-color: cadetblue; */
+  padding: 2rem 1rem;
+  text-align: right;
+  font-style: italic;
+  line-height: 2rem;
+  border-right: 1px solid rgb(5, 5, 5);
+}
+
+.portfolio-timeline .project-text {
+    width: 50%;
+    float: left;
+}
+
+.portfolio-timeline .project-image {
+  padding-left: 2rem;
+  width: 50%;
+  float: left;
+  text-align: center;
+  max-width: 350px;
+}
+
+.portfolio-timeline .project-image img, .portfolio-timeline .project-image video {
+  width: 100%;
+  max-height: 500px;
+}
+
+.page-title h2, .technologies-title {
+  margin-top:.5rem;
+}
+
+/* footer styles */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) { ... }
+  
+/* Large devices (desktops, 949px and below)*/
+@media only screen and (max-width: 950px) { 
+  .dropdown-nav {
+    display: none;
+  }
+  .dropdown-nav-active {
+    display: block;
+    height: 0;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+  }
+  .main-navigation .dropdown-nav-active {
+    height: 180px;
+  }
+  .home-section {
+    position: relative;
+  }
+  /* testing */
+  .wrapper {
+    display: hidden;
+    height: auto;
+  }
+  .sml-screen-portfolio-section{
+    padding: 1.5rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  /* testing */
+  .site-sidebar > * {
+    position: relative;
+  }
+
+  /* home page only styles; */
+  .h-card {
+    height: 100vh;
+  }
+
+  .parent-home .person {
+    display: none;
+  }
+  .landing-main-inner {
+    width: 100%;
+    /* this is to allow space for event listener may need increasing */
+    top:66px;
+  }
+  .parent-home .main-navigation {
+    position: absolute;
+    margin: 0 0;
+    padding: 0.5rem 2rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* testing Change this colour; */
+    background-color: black;
+  }
+  /* end of home specific styles */
+
+  .site-sidebar::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* testing */
+    content: none;
+  }
+  .site-sidebar {
+    display: block;
+    top: auto;
+    bottom: auto;
+    left:auto;
+    right:auto;
+    position: relative;
+    width: auto;
+    opacity: 1;    
+  }
+  .site-sidebar-inner {
+    padding: 0 40px;
+    padding-top: 2rem; /*approx 30px*/
+    /* testing */
+    width: 100%;
+  }
+  .site-main {
+    margin:0;
+  }
+  .contact-site-main-inner{
+    position: relative;
+    padding: 2rem 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .portfolio-site-main-inner {
+    position: relative;
+    width: 100%;
+    background-color: rgba(251, 251, 251, 0.897);
+  }
+
+  .portfolio-timeline .project-text {
+    width: auto;
+    float: none;
+  }
+
+  /* THis one; */
+  .main-navigation {
+    padding-top: 1rem;
+    text-align: right;
+    display: block;
+    /* border-top: 1px solid white; */
+    /* border-bottom: 1px solid azure; */
+    border: 1px solid rgba(255,255,255,.2);
+    border-width: 1px 0;
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    line-height: 50px;
+
+    /* THIS MARGIN CAUSES WHITESPACE if .site-sidebar-inner padding top is removed. */
+    margin: 1.5rem -1rem;
+  } 
+
+  .main-navigation .nav-extend-bar .social-icons {    
+    float: left;
+  }
+
+  /* probable name change below */
+  .hamburger {
+    width: 50%;
+  }
+  .block-social {
+    display: none;
+  }
+  .main-contact {
+    padding: 0;
+  }
+  .person, .contact-details{
+    width: 100%;
+    /* display: none; */
+  }
+  .spacer{
+    width: 120px;
+  }
+  .main-navigation .nav-extend-bar a {
+    display: inline-block;
+  }
+}
+
+/* Extra large devices (large desktops, 950px and up)*/
+@media only screen and (min-width: 950px) {
+  .nav-extend-bar {
+    display: none;
+  }
+  .main-navigation, .nav-extend-bar {
+    font-size: 18px;
+    border: 1px solid rgba(255,255,255,.2);
+    border-width: 1px 0;
+    padding: 0 40px;
+    /* display: none; */
+    border-width: 1px 0;
+    margin: 0 -40px;
+  }
+  /* below is unnecissary as it will not display above 950px screen */
+  /* .social-icons, .hamburger{
+    width: 50%;
+    float: left;
+  }
+  .hamburger{
+    align-items: ;
+  } */
+
+  .portfolio-section {
+  max-width: 1400px;
+  height: 100%;
+  padding: 3.5rem 4rem;
+  line-height: 1.5;
+  color: black;
+  /* Amend below. Temporary sizing; */
+  font-size: 20px;
+  /* below blocks out the background image dont want to keep. */
+  /* same as .main-contact section */
+  /* background-color: #f4f4f4; */
+
+  /* Troubleshootijng sml screeen responsiveness */
+  /* overflow: scroll; */
+  }
+}
