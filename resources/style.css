@@ -26,6 +26,19 @@ a {
   background-color: rgba(145,13,13,.8);
 }
 
+.site-sidebar .person {
+  text-align: center;
+}
+
+.site-sidebar .site-sidebar-inner {
+  /* padding: 45px 40px; */
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  /* -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; */
+}
+
 .site-main {
   margin-left: 25%;
 }
@@ -73,6 +86,34 @@ a {
   max-height: 500px;
 }
 
+.main-navigation, .block-title {  
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 2.5em;
+}
+.main-navigation {
+  /* =========== confirm this horz margin========================= */
+  margin: 45px 0px;
+  line-height: 30px;
+  position: relative;
+  font-size: 14px;
+}
+.person .person-content .person-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.person .person-content .person-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.site-sidebar .block-social i {
+  font-size: 22px;
+}
+/* == End of universal == */
+
 /* Large devices (desktops, 949px and below)*/
 @media only screen and (max-width: 949px){
   .parent-home .site-main::before {
@@ -108,12 +149,18 @@ a {
     right: auto;
     position: relative;
     width: auto;
-    padding-top: 40px;
+    /* below keeps the bar flush to the top of screen when in mobile*/
+    /* padding-top: 40px; */
     padding-bottom: 0;
   }
+
+  /* below hides the person info on small screens across all pages */
+  .parent-contact .site-sidebar .person,
+  .parent-portfolio .site-sidebar .person,
   .parent-home .site-sidebar .person {
     display: none;
   }
+
   .home-section {
     position: relative;
     /* below hidess the desktop image on mobile devices */
@@ -125,12 +172,50 @@ a {
     margin: 0;
   }
 
-  /* body.parent-home .site-sidebar */
+  .main-navigation {
+    padding-top: 1rem;
+    text-align: right;
+    display: block;
+    /* border-top: 1px solid white; */
+    /* border-bottom: 1px solid azure; */
+    border: 1px solid rgba(255,255,255,.2);
+    border-width: 1px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 50px;
+
+    /* THIS MARGIN CAUSES WHITESPACE if .site-sidebar-inner padding top is removed. */
+    margin: 0 1rem;
+  } 
+
+  .main-navigation .nav-extend-bar .social-icons {    
+    float: left;
+  }
+
+  /* probable name change below */
+  .hamburger {
+    width: 50%;
+  }
+  .block-social {
+    display: none;
+  }
+
 }
 
 /* Extra large devices (large desktops, 950px and up)*/
 @media only screen and (min-width: 950px){
   .home-section {
     background: url('https://images.unsplash.com/photo-1545469044-68715f789051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80' ) top center no-repeat #bababa;
+  }
+  .site-sidebar .site-sidebar-inner {
+  padding: 45px 40px;
+  }
+
+
+  /* below hides the navigation extendabl;;e bar on larger screens */
+  .parent-contact .nav-extend-bar,
+  .parent-portfolio .nav-extend-bar,
+  .parent-home .nav-extend-bar {
+    display: none;
   }
 }
