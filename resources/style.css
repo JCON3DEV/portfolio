@@ -116,6 +116,37 @@ a {
 .site-sidebar .block-social i {
   font-size: 22px;
 }
+
+/* contact page styles */
+.main-contact {
+  /* max-width: 850px; */
+  padding: 50px;
+  background-color: #fff;
+  color: #333;
+}
+.main-contact-wrapper .page-title {
+  margin-bottom: 1rem;
+  color: #555;
+}
+/* .contact-details {
+  margin-top:1.5rem;
+  width: 80%;
+} */
+li p{
+  display: inline-block;
+}
+.spacer{
+  width: 180px;
+}
+.contact-details {
+  margin-top:1.5rem;
+  width: 80%;
+}
+.contact-details a {
+  /* =======colour should be changed to match site sidebar ==================*/
+  color: rgb(46, 46, 189);
+}
+
 /* == End of universal == */
 
 /* Large devices (desktops, 949px and below)*/
@@ -203,7 +234,20 @@ a {
   .block-social {
     display: none;
   }
-
+  /* contact page specific styles */
+  .spacer {
+    width: 6rem;
+  }
+  .main-contact{
+    padding: 2rem 1.5rem;
+  }
+  /* None home page stylings for small screen */
+  .parent-contact .site-sidebar .person,
+  .parent-portfolio .site-sidebar .person {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 14px;
+  }
 }
 
 /* Extra large devices (large desktops, 950px and up)*/
