@@ -149,7 +149,7 @@ li p{
 
 /* == End of universal == */
 
-/* Large devices (desktops, 949px and below)*/
+/* Mobile and Tablet devices (desktops, 949px and below)*/
 @media only screen and (max-width: 949px){
   .parent-home .site-main::before {
     position: fixed;
@@ -233,6 +233,16 @@ li p{
   }
   .block-social {
     display: none;
+  }
+  /* below controls the trasitions animation; */
+  .main-navigation.extended .dropdown-nav {
+    /* CHANGE HEIGHT IF EXTRA PAGES ADDED TO NAVIGATION */
+    height: 240px;
+  }
+  .main-navigation .dropdown-nav {
+    height: 0;
+    -webkit-transition: height .5s;
+    transition: height .5s;
   }
   /* contact page specific styles */
   .spacer {
