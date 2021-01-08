@@ -90,13 +90,16 @@ a {
   text-align: left;
   text-transform: uppercase;
   line-height: 2.5em;
+
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 .main-navigation {
   /* =========== confirm this horz margin========================= */
   margin: 45px 0px;
-  line-height: 30px;
-  position: relative;
   font-size: 14px;
+  line-height: 3rem;
+  position: relative;
 }
 .person .person-content .person-title {
   font-size: 1.5rem;
@@ -109,6 +112,7 @@ a {
   text-transform: uppercase;
 }
 
+.site-sidebar .nav-extend-bar i,
 .site-sidebar .block-social i {
   font-size: 22px;
 }
@@ -182,7 +186,7 @@ a {
     border-width: 1px 0;
     font-size: 14px;
     text-transform: uppercase;
-    line-height: 50px;
+    line-height: 3.5rem;
 
     /* THIS MARGIN CAUSES WHITESPACE if .site-sidebar-inner padding top is removed. */
     margin: 0 1rem;
