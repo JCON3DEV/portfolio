@@ -226,6 +226,7 @@ li p{
     border: none;
   }
   .timeline_element-content{
+    /* THIS NEEDS CORRECTING TO DISPLAY WELL */
     /* margin-left: 0;
     margin-right: 0; */
   }
