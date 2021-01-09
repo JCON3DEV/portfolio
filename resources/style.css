@@ -146,6 +146,71 @@ li p{
   /* =======colour should be changed to match site sidebar ==================*/
   color: rgb(46, 46, 189);
 }
+/* Portfolio styles lines 242 -304 */
+
+.portfolio-buttons a, .timeline a {
+  /* temporary adjust later */
+  color: rgb(131, 144, 144);
+}
+
+.timeline {
+  margin-left: -80px;
+  margin-top:1rem;
+}
+
+.timeline>ul, .timeline>ul>li {
+  margin: 0;
+  padding: 0;
+  /* double check this; */
+  list-style: none;
+}
+
+.timeline_element {
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline_element-content {
+  border-top: 1px solid black;
+  padding: 2rem 0;
+  margin-left: 180px;
+  margin-right: 0.5rem;
+  overflow: hidden;
+}
+
+.timeline_element-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* should this be fixed or relative? eg 10rem */
+  width: 160px;
+  /* below was for positioning troubleshooting */
+  /* background-color: cadetblue; */
+  padding: 2rem 1rem;
+  text-align: right;
+  font-style: italic;
+  line-height: 2rem;
+  border-right: 1px solid rgb(5, 5, 5);
+}
+
+.portfolio-timeline .project-text {
+    width: 50%;
+    float: left;
+}
+
+.portfolio-timeline .project-image {
+  padding-left: 2rem;
+  width: 50%;
+  float: left;
+  text-align: center;
+  max-width: 350px;
+}
+
+.portfolio-timeline .project-image img, .portfolio-timeline .project-image video {
+  width: 100%;
+  max-height: 500px;
+}
 
 /* == End of universal == */
 
@@ -258,6 +323,21 @@ li p{
     padding-top: 32px;
     padding-bottom: 14px;
   }
+  /* portfolio specific */
+   .portfolio-site-main-inner {
+    position: relative;
+    width: 100%;
+    background-color: rgba(251, 251, 251, 0.897);
+  }
+
+  .portfolio-timeline .project-text {
+    width: auto;
+    float: none;
+  }
+
+  .portfolio-section-inner {
+    padding: 2rem 1.5rem;
+  }
 }
 
 /* Extra large devices (large desktops, 950px and up)*/
@@ -272,5 +352,14 @@ li p{
   .parent-portfolio .nav-extend-bar,
   .parent-home .nav-extend-bar {
     display: none;
+  }
+  .portfolio-section {
+  max-width: 1400px;
+  height: 100%;
+  padding: 3.5rem 4rem;
+  line-height: 1.5;
+  color: black;
+  /* Amend below. Temporary sizing; */
+  font-size: 20px;
   }
 }
