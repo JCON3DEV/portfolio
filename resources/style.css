@@ -214,6 +214,22 @@ li p{
 
 /* == End of universal == */
 
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+  .timeline_element-content{
+    padding-top: 0;
+  }
+  .timeline_element-date {
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    border: none;
+  }
+  .timeline_element-content{
+    /* margin-left: 0;
+    margin-right: 0; */
+  }
+ }
 /* Mobile and Tablet devices (desktops, 949px and below)*/
 @media only screen and (max-width: 949px){
   .parent-home .site-main::before {
