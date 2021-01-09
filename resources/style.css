@@ -262,9 +262,6 @@ li p{
 
 /* Extra large devices (large desktops, 950px and up)*/
 @media only screen and (min-width: 950px){
-  .home-section {
-    background: url('https://images.unsplash.com/photo-1545469044-68715f789051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80' ) top center no-repeat #bababa;
-  }
   .site-sidebar .site-sidebar-inner {
   padding: 45px 40px;
   }
