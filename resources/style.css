@@ -148,6 +148,13 @@ li p{
 }
 /* Portfolio styles lines 242 -304 */
 
+.project-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: .3em;
+}
+
 .portfolio-buttons a, .timeline a {
   /* temporary adjust later */
   color: rgb(131, 144, 144);
@@ -171,7 +178,7 @@ li p{
 }
 
 .timeline_element-content {
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
   padding: 2rem 0;
   margin-left: 180px;
   margin-right: 0.5rem;
@@ -191,6 +198,7 @@ li p{
   text-align: right;
   font-style: italic;
   line-height: 2rem;
+  border-top: none;
   border-right: 1px solid rgb(5, 5, 5);
 }
 
@@ -216,19 +224,26 @@ li p{
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) { 
+  .timeline {
+    margin-left: 0;
+  }
   .timeline_element-content{
-    padding-top: 0;
+    padding-top: 15px;
   }
   .timeline_element-date {
     padding-top: 0;
     position: relative;
     width: 100%;
-    border: none;
+    border-right: none;
+    text-align: left;
+    padding: 10px 0 0;
+    border-top: 1px solid #999;
+    color: #999;
   }
   .timeline_element-content{
     /* THIS NEEDS CORRECTING TO DISPLAY WELL */
-    /* margin-left: 0;
-    margin-right: 0; */
+    margin-left: 0;
+    margin-right: 0;
   }
  }
 /* Mobile and Tablet devices (desktops, 949px and below)*/
