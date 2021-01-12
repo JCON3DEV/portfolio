@@ -5,12 +5,19 @@ body{
   font: 16px/1.6 Roboto,Helvetica,sans-serif;
   font-weight:300;
 }
-
+/* color pallette used;
+Mist; rgb(125, 163, 161, 0.8)
+Reflection; rgb(52, 103, 92, 0.8)
+Blue Pine: rgb(50, 72, 81, 0.8);
+*/
 a {
   text-decoration: none !important;
   /* experimenting with colour */
-  /* color: #FFFFFF; */
-  color: black;
+  color: #FFFFFF;
+  color: #f8f9fa;
+  /* color: black; */
+  /* below is blue pine goes with Mist */
+  /* color: rgb(50, 72, 81, 0.8); */
 }
 
 .site-sidebar {
@@ -21,13 +28,29 @@ a {
   z-index: 2;
   width: 25%;
   font-size: 14px;
+  /* below is bliue pine goes with Mist */
+  color: rgb(50, 72, 81, 0.8);
   color: #fff;
   text-align: left;
-  background-color: rgba(145,13,13,.8);
+  /* below is main colour schema link to; .tech-tags a*/
+  /* background-color: rgba(145,13,13,.8); */
+  /* below is waterfall */
+  background-color: rgba(104, 130, 158, 0.8);
+  /* below is  Thunder cloud */
+  /* background-color: rgb(80, 81, 96, 0.8); */
+  /* below is Wave */
+  /* background-color: rgb(102, 165, 173, 0.8); */
+  /* below is Forest green*/
+  background-color: rgb(46, 70, 0, 0.8);
+  /* below is canary yellow  Like*/
+  background-color: rgb(230, 215, 42, 0.8);
+  /* below is Mist */
+  background-color: rgb(125, 163, 161, 0.8);
 }
 
 .site-sidebar .person {
   text-align: center;
+  color: inherit;
 }
 
 .site-sidebar .site-sidebar-inner {
@@ -104,6 +127,9 @@ a {
   line-height: 3rem;
   position: relative;
 }
+.main-navigation a {
+  color: #f8f9fa;
+}
 .person .person-content .person-title {
   font-size: 1.5rem;
   font-weight: 500;
@@ -129,7 +155,9 @@ a {
 }
 .main-contact-wrapper .page-title {
   margin-bottom: 1rem;
-  color: #555;
+  /* color: #555; */
+  /* below is Blue Pine */
+  color:rgb(50, 72, 81, 0.8);
 }
 /* .contact-details {
   margin-top:1.5rem;
@@ -146,21 +174,27 @@ li p{
   width: 80%;
 }
 .contact-details a {
-  /* =======colour should be changed to match site sidebar ==================*/
-  color: rgb(46, 46, 189);
+  /* below is Blue Pine */
+  color:rgb(50, 72, 81, 0.8);
+  /* below is reflection */
+  color: rgb(52, 103, 92, 0.8);
 }
 /* Portfolio styles lines 242 -304 */
-
+.page-title,
 .project-title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1;
-    margin-bottom: .3em;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: .3em;
+  /* below is Blue Pine */
+  color:rgb(50, 72, 81, 0.8);
 }
 
 .portfolio-buttons a, .timeline a {
   /* temporary adjust later */
-  color: rgb(131, 144, 144);
+  /* color: rgb(131, 144, 144); */
+  /* below is Blue Pine */
+  color:rgb(50, 72, 81, 0.8);
 }
 
 .timeline {
@@ -235,12 +269,21 @@ li p{
 }
 
 .tech-tags a {
-    display: inline-block;
-    color: #FFF;
-    background-color: rgba(145,13,13,.8);
-    padding: 4px 10px;
-    font-size: 13px;
-    text-transform: uppercase;
+  display: inline-block;
+  color: #FFF;
+  
+  /* background-color: rgba(145,13,13,.8); */
+  background-color: rgba(104, 130, 158, 0.8);
+  background-color: rgb(46, 70, 0, 0.8);
+  background-color: rgb(91, 200, 172, 0.8);
+  /* below is reflection goes with mist */
+  background-color: rgb(52, 103, 92),0.8;
+  /* below is blue pine goes with Mist */
+  /* background-color: rgb(50, 72, 81, 0.8); */
+  background-color: rgb(125, 163, 161, 0.8);
+  padding: 4px 10px;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 .tech-tags >li {
@@ -311,7 +354,7 @@ li p{
     width: auto;
     /* below keeps the bar flush to the top of screen when in mobile*/
     /* padding-top: 40px; */
-    padding-bottom: 0;
+    padding-bottom: 0;    
   }
 
   /* below hides the person info on small screens across all pages */
@@ -408,6 +451,10 @@ li p{
 @media only screen and (min-width: 950px){
   .site-sidebar .site-sidebar-inner {
   padding: 45px 40px;
+  }
+  .site-sidebar {
+    /* Only for full screen site-sidebar */
+    color: #FFF;
   }
 
 
