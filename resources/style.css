@@ -212,7 +212,8 @@ li p{
   width: 50%;
   float: left;
   text-align: center;
-  max-width: 350px;
+  /* styling question unsure if below is necessary */
+  /* max-width: 350px; */
 }
 
 .portfolio-timeline .project-image img, .portfolio-timeline .project-image video {
@@ -393,6 +394,10 @@ li p{
 
   .portfolio-section-inner {
     padding: 2rem 1.5rem;
+  }
+  .portfolio-timeline .project-image {
+    padding-left: 0;
+    width: 100%;
   }
 }
 
