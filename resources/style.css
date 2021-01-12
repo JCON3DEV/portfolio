@@ -220,6 +220,30 @@ li p{
   max-height: 500px;
 }
 
+.project-technologies {
+  margin-top: 2rem;
+}
+.tech-tags{
+  display:inline-block;
+} 
+.tech-tags.li {
+  display: inline-block;
+}
+
+.tech-tags a {
+    display: inline-block;
+    color: #FFF;
+    background-color: rgba(145,13,13,.8);
+    padding: 4px 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.tech-tags >li {
+  margin: 10px;
+  padding: 0;
+}
+
 /* == End of universal == */
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -317,7 +341,7 @@ li p{
     line-height: 3.5rem;
 
     /* CONFIRM THIS MARGIN CAUSES */
-    margin: 0 1rem;
+    margin: 0 1.5rem;
   } 
 
   .main-navigation .nav-extend-bar .social-icons {    
