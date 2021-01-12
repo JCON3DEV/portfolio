@@ -28,9 +28,10 @@ a {
   z-index: 2;
   width: 25%;
   font-size: 14px;
-  /* below is bliue pine goes with Mist */
-  color: rgb(50, 72, 81, 0.8);
-  color: #fff;
+  /* below is blue pine goes with Mist */
+  /* color: rgb(50, 72, 81, 0.8); */
+  /* The colour is #f8f9fa muted to make my name stand out */
+  color: rgb(248, 249, 250, 0.8);
   text-align: left;
   /* below is main colour schema link to; .tech-tags a*/
   /* background-color: rgba(145,13,13,.8); */
@@ -102,6 +103,32 @@ a {
   margin-left: 25%;
 }
 
+/* home-section .home-buttons .button {
+  text-decoration: none;
+    user-select: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: .8;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.47);
+    margin-bottom: 1em;
+} */
+.home-section .home-buttons .button-outline {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: .4rem .4rem;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.47);
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.home-heading{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
 .avatar {
   max-width: 152px;
   padding-bottom: 1rem;
@@ -123,20 +150,22 @@ a {
 .main-navigation {
   /* =========== confirm this horz margin========================= */
   margin: 45px 0px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 3rem;
   position: relative;
 }
 .main-navigation a {
-  color: #f8f9fa;
+  /* The colour is muted to make my name stand out */
+  /* color: #f8f9fa; */
+  color: rgb(248, 249, 250, 0.8);
 }
 .person .person-content .person-title {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
 }
 .person .person-content .person-subtitle {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -216,7 +245,8 @@ li p{
 
 .timeline_element-content {
   /* border-top: 1px solid black; */
-  padding: 2rem 0;
+  /* horizontal padding below must match .timeline_element-date */
+  padding: 1.5rem 0;
   margin-left: 180px;
   margin-right: 0.5rem;
   overflow: hidden;
@@ -229,9 +259,8 @@ li p{
   bottom: 0;
   /* should this be fixed or relative? eg 10rem */
   width: 160px;
-  /* below was for positioning troubleshooting */
-  /* background-color: cadetblue; */
-  padding: 2rem 1rem;
+  /* horizontal padding below must match .timeline_element-content */
+  padding: 1.5rem 1rem;
   text-align: right;
   font-style: italic;
   line-height: 2rem;
@@ -256,6 +285,7 @@ li p{
 .portfolio-timeline .project-image img, .portfolio-timeline .project-image video {
   width: 100%;
   max-height: 500px;
+  margin-top: 1.5rem;
 }
 
 .project-technologies {
@@ -449,14 +479,13 @@ li p{
 
 /* Extra large devices (large desktops, 950px and up)*/
 @media only screen and (min-width: 950px){
+  .home-section {
+    /* below is to improve readability when using Norway Picture */
+    text-shadow: 2px 2px 4px #000000;
+  }
   .site-sidebar .site-sidebar-inner {
   padding: 45px 40px;
   }
-  .site-sidebar {
-    /* Only for full screen site-sidebar */
-    color: #FFF;
-  }
-
 
   /* below hides the navigation extendabl;;e bar on larger screens */
   .parent-contact .nav-extend-bar,
