@@ -203,17 +203,15 @@ li p{
 }
 /*  === Portfolio styles lines 242 -304 === */
 
-/* currently scroll bar still visable */
 /* Hide scrollbar for Chrome, Safari and Opera */
-/* .parent-portfolio::-webkit-scrollbar {
+.parent-portfolio::-webkit-scrollbar {
   display: none;
-} */
-
+}
 /* Hide scrollbar for IE, Edge and Firefox */
-/* .parent-portfolio { */
-  /*-ms-overflow-style: none;*/  /* IE and Edge */
-  /*scrollbar-width: none;*/  /* Firefox */
-/* } */
+.parent-portfolio {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .page-title,
 .project-title {
   font-weight: 400;
