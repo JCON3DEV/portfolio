@@ -19,6 +19,10 @@ a {
   /* below is blue pine goes with Mist */
   /* color: rgb(50, 72, 81, 0.8); */
 }
+.waterfall{
+  /* below is Blue Pine */
+  color:rgb(50, 72, 81, 0.8);
+}
 
 .site-sidebar {
   top: 0;
@@ -244,8 +248,9 @@ li p{
 }
 
 .timeline_element-content {
-  /* border-top: 1px solid black; */
-  /* horizontal padding below must match .timeline_element-date */
+  /* below is Reflection */
+  border-top: 1px solid rgb(52, 103, 92, 0.6);
+  /* ## horizontal padding below must match .timeline_element-date ##*/
   padding: 1.5rem 0;
   margin-left: 180px;
   margin-right: 0.5rem;
@@ -338,13 +343,15 @@ li p{
     border-right: none;
     text-align: left;
     padding: 10px 0 0;
-    border-top: 1px solid #999;
+    /* below is Reflection */
+    border-top: 1px solid rgb(52, 103, 92, 0.6);
     color: #999;
   }
   .timeline_element-content{
     /* THIS NEEDS CORRECTING TO DISPLAY WELL */
     margin-left: 0;
     margin-right: 0;
+    border-top: none;
   }
  }
 /* Mobile and Tablet devices (desktops, 949px and below)*/
