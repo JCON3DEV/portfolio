@@ -107,15 +107,6 @@ a {
   margin-left: 25%;
 }
 
-/* home-section .home-buttons .button {
-  text-decoration: none;
-    user-select: none;
-    text-transform: uppercase;
-    font-weight: 300;
-    opacity: .8;
-    box-shadow: 1px 1px 2px rgba(0,0,0,.47);
-    margin-bottom: 1em;
-} */
 .home-section .home-buttons .button-outline {
   display: inline-block;
   margin-top: 1.5rem;
@@ -273,6 +264,13 @@ li p{
   border-right: 1px solid rgb(5, 5, 5);
 }
 
+/* below currently does not work ;*/
+/* .timeline.portfolio-timeline .timeline_element-content .current-project,
+.timeline.portfolio-timeline .timeline_element-date .current-project {
+  padding-top: 0;
+  border-top: none;
+} */
+
 .portfolio-timeline .project-text {
     width: 50%;
     float: left;
@@ -324,6 +322,7 @@ li p{
 .tech-tags >li {
   margin: 10px;
   padding: 0;
+  display: contents;
 }
 
 /* == End of universal == */
@@ -332,9 +331,6 @@ li p{
 @media (max-width: 576px) { 
   .timeline {
     margin-left: 0;
-  }
-  .timeline_element-content{
-    padding-top: 15px;
   }
   .timeline_element-date {
     padding-top: 0;
@@ -348,12 +344,20 @@ li p{
     color: #999;
   }
   .timeline_element-content{
+    padding-top: 15px;
     /* THIS NEEDS CORRECTING TO DISPLAY WELL */
     margin-left: 0;
     margin-right: 0;
     border-top: none;
   }
  }
+
+ /* @media only screen and (min-width: 577px){
+   .timeline_element-content .current-project  {
+    padding-top: 0;
+  }
+ } */
+
 /* Mobile and Tablet devices (desktops, 949px and below)*/
 @media only screen and (max-width: 949px){
   .parent-home .site-main::before {
